@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dimitrije Vuković - Portfolio of Software Engineer!">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" media="print" onload="this.media='all'">
 
     <!--=============== FAVICON ===============-->
     <link
@@ -15,6 +21,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      media="print" onload="this.media='all'"
     />
 
     <!--=============== CSS ===============-->
@@ -27,7 +34,7 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <img src="assets/img/dmtr-logo1.png" alt="Dimitrije" class="nav__logo-img">
+          <img src="assets/img/dmtr-logo1.png" alt="Logo" width="44" height="44" class="nav__logo-img">
         </a>
 
         <div class="nav__menu" id="nav-menu">
@@ -74,7 +81,8 @@
           <div class="home__content">
             <div class="home__image">
               <div class="home__img-box">
-                <img src="assets/img/portrait.png" alt="Dimitrije Vuković - Portret" class="home__img" />
+                <img src="assets/img/portrait.webp" alt="Dimitrije Vuković - Portret" width="500" 
+                height="578" fetchpriority="high" class="home__img" />
               </div>
             </div>
 
@@ -83,6 +91,7 @@
                 href="https://www.linkedin.com/in/dmtrin/"
                 target="_blank"
                 class="home__link"
+                aria-label="LinkedIn Profil"
               >
                 <i class="ri-linkedin-box-fill"></i>
               </a>
@@ -91,6 +100,7 @@
                 href="https://github.com/dmtrhub"
                 target="_blank"
                 class="home__link"
+                aria-label="GitHub Profil"
               >
                 <i class="ri-github-fill"></i>
               </a>
@@ -175,8 +185,10 @@
 
           <div class="about__image">
             <img
-              src="assets/img/portrait.png"
+              src="assets/img/portrait.webp"
               alt="Dimitrije Vuković - Portret"
+              width="500" 
+              height="578"
               class="about__img"
             />
           </div>
@@ -190,7 +202,7 @@
         <div class="projects__container container grid">
           <article class="projects__card">
             <img
-              src="assets/img/project1.png"
+              src="assets/img/project1.webp"
               alt="Sky Tickets - Platform for Airline Ticketing"
               class="projects__img"
             />
@@ -210,7 +222,7 @@
 
           <article class="projects__card">
             <img
-              src="assets/img/project2.png"
+              src="assets/img/project2.webp"
               alt="Quiz Hub - Full-stack application"
               class="projects__img"
             />
@@ -230,7 +242,7 @@
 
           <article class="projects__card">
             <img
-              src="assets/img/project3.png"
+              src="assets/img/project3.webp"
               alt="Quiz Platform - Distributed System"
               class="projects__img"
             />
@@ -251,7 +263,7 @@
 
           <article class="projects__card">
             <img
-              src="assets/img/project4.png"
+              src="assets/img/project4.webp"
               alt="Microservices CMS System for Perfumery Information Management"
               class="projects__img"
             />
@@ -272,7 +284,7 @@
 
           <article class="projects__card">
             <img
-              src="assets/img/project5.png"
+              src="assets/img/project5.webp"
               alt="Desktop CMS Application - Sopranos Characters Management System"
               class="projects__img"
             />
@@ -293,7 +305,7 @@
 
           <article class="projects__card">
             <img
-              src="assets/img/project6.png"
+              src="assets/img/project6.webp"
               alt="Dynamic Load Balancer System"
               class="projects__img"
             />
@@ -465,6 +477,7 @@
                 href="https://www.instagram.com/dm.__.tr"
                 target="_blank"
                 class="contact__link"
+                aria-label="Instagram Profil"
               >
                 <i class="ri-instagram-fill"></i>
               </a>
@@ -473,6 +486,7 @@
                 href="https://m.me/vukoviccd"
                 target="_blank"
                 class="contact__link"
+                aria-label="Facebook Messenger Profil"
               >
                 <i class="ri-messenger-fill"></i>
               </a>
@@ -481,6 +495,7 @@
                 href="https://wa.me/381611890019"
                 target="_blank"
                 class="contact__link"
+                aria-label="WhatsApp Profil"
               >
                 <i class="ri-whatsapp-fill"></i>
               </a>
@@ -510,7 +525,7 @@
     </footer>
 
     <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
       <i class="ri-arrow-up-line"></i>
     </a>
 

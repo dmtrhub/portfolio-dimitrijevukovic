@@ -272,6 +272,7 @@ img {
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -281,6 +282,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   border: none !important;
   transform: none !important;
   filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, 0.2));
@@ -906,6 +908,8 @@ html.sr .footer__container {
   .about__img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .projects__data {
@@ -990,7 +994,7 @@ html.sr .footer__container {
     border-width: 8px !important;
   }
   .home__img {
-    width: 340px;
+    object-fit: cover;
   }
   .home__social {
     left: -4rem;
