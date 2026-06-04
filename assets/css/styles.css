@@ -254,7 +254,6 @@ img {
   display: flex !important;
   justify-content: center !important;
   align-items: flex-end !important;
-  overflow: hidden !important;
 
   outline: 2px dashed transparent !important;
   outline-offset: 0px !important;
@@ -265,7 +264,17 @@ img {
 .home__image:hover {
   box-shadow: 0 0 25px rgba(56, 182, 255, 0.7) !important;
   outline: 3px dashed #38b6ff !important;
-  outline-offset: 12px !important;
+  outline-offset: 12px !important; 
+}
+
+.home__img-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .home__img {
@@ -726,6 +735,15 @@ img {
   transform: translateY(-0.25rem);
 }
 
+.contact__phone {
+  color: var(--white-color);
+  transition: color 0.4s;
+}
+
+.contact__phone:hover {
+  color: var(--first-color);
+}
+
 /*=============== FOOTER ===============*/
 .footer {
   padding-block: 3rem 1.5rem;
@@ -886,7 +904,8 @@ html.sr .footer__container {
 
   .home__img,
   .about__img {
-    width: 170px;
+    width: 100%;
+    height: 100%;
   }
 
   .projects__data {
