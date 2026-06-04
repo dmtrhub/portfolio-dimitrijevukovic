@@ -252,11 +252,8 @@ img {
   border-radius: 50% !important;
 
   display: block !important; 
-  overflow: hidden !important; 
   position: relative;
 
-  outline: 2px dashed transparent !important;
-  outline-offset: 0px !important;
   box-shadow: 0 8px 32px hsla(var(--hue), 80%, 48%, 0.3);
   transition: box-shadow 0.4s ease, outline 0.4s ease, outline-offset 0.4s ease !important;
 }
@@ -273,8 +270,11 @@ img {
   border-radius: 50% !important;
   overflow: hidden !important;
   position: relative;
-  
   display: block;
+
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
+  transform: translateZ(0);
 }
 
 .home__img {
